@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Recommendation System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff7e6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 50px;
+    }
+    h2 {
+      color: #FF9800;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #FF9800;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #fb8c00;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crop Recommendation</h1>
+  <form action="/crop-recommendation" method="POST">
+      <label>Nitrogen:</label> <input type="text" name="nitrogen"><br>
+      <label>Phosphorous:</label> <input type="text" name="phosphorous"><br>
+      <label>Potassium:</label> <input type="text" name="potassium"><br>
+      <label>Temperature:</label> <input type="text" name="temperature"><br>
+      <label>Humidity:</label> <input type="text" name="humidity"><br>
+      <label>pH:</label> <input type="text" name="pH"><br>
+      <label>Rainfall:</label> <input type="text" name="rainfall"><br>
+      <button type="submit">Recommend Crop</button>
+  </form>
+</body>
+</html>

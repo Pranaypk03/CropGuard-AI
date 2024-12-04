@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detection Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #e3f2fd;
+    }
+    .container {
+      padding: 50px;
+    }
+    img {
+      max-width: 300px;
+      margin: 20px 0;
+    }
+    .result {
+      font-size: 18px;
+      color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Disease Detection Result</h2>
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    <p class="result">Predicted Label: {{ prediction }}</p>
+  </div>
+</body>
+</html>

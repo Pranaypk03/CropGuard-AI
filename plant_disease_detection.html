@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Disease Detection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #eef5f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 50px;
+    }
+    h2 {
+      color: #2196F3;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type="file"] {
+      margin: 20px 0;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #1e88e5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Plant Disease Detection</h1>
+  <form action="/plant-disease-detection" method="POST" enctype="multipart/form-data">
+      <label for="image">Upload an image:</label>
+      <input type="file" name="image" id="image" accept="image/*">
+      <button type="submit">Predict Disease</button>
+  </form>
+</body>
+</html>
